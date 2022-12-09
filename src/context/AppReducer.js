@@ -7,6 +7,12 @@ export default (state, action) => {
                 watchlist: [action.payload, ...state.watchlist]
             };
 
+            // const addMovieToWatchlist = movie=>{
+            //     dispatch({type: "ADD_MOVIE_TO_WATCHLIST", payload: movie});
+            //    
+            // };
+
+
         case "REMOVE_MOVE_FROM_WATCHLIST":
             return {
                 ...state,

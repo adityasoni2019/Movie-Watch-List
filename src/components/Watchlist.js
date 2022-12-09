@@ -3,8 +3,7 @@ import { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 import MovieCard from './MovieCard';
 
-
-export const Watchlist = () => {
+const Watchlist = () => {
 
   const {watchlist} = useContext(GlobalContext);
   // ^ this is for accessing watchlist from global state.
@@ -36,4 +35,4 @@ export const Watchlist = () => {
   );
 };
 
-export default Watchlist
+export default Watchlist;
